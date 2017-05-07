@@ -1,6 +1,6 @@
  # lower_humanoid
                                                          
-![alt text](https://github.com/kalpgarg/lower_humanoid/blob/master/humanoid-image-2.png)
+![alt text](/humanoid-image-2.png)
 
 # Abstract:
 Our idea is to make a full fledged human-like bot which can perform almost all functions of human. This semi-automated bot can be deployed in various domains such as in paramedics, military, healthcare, banking, industries, etc. Moroever, its main utility arises in fields which is risky for humans. For eg.- in fire fighting situations, etc.
