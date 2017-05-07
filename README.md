@@ -20,7 +20,7 @@ Complete project is arduino based. Arduino IDE is required as a software which c
  
  ![alt text](https://github.com/kalpgarg/lower_humanoid/blob/master/humanoid-mech-image1.jpg)
  
- Complete 3d view of this design:______ (open this file in Adobe Acrobat Reader DC or any relevant software which can open 3d pdf file).
+ Complete 3d view of this design: https://github.com/kalpgarg/lower_humanoid/blob/master/one%20leg%20design.PDF (open this file in Adobe Acrobat Reader DC or any relevant software which can open 3d pdf file).
  
  Major parts used were 3d printed from Tinkering Labroratory,IITR
  
@@ -29,4 +29,27 @@ Complete project is arduino based. Arduino IDE is required as a software which c
 Eagle Schematics file- https://github.com/kalpgarg/lower_humanoid/blob/master/Mars.sch
 
 # Control:
-It has 4 d.o.f. in each leg 
+It has 4 d.o.f. in each leg which is sufficient for providing straight walking motion. It is to be noted that for same pair of dc motors, we can achieve side-side as well as front-back motion of a joint. For eg.- If the two motors (attached in the same half of one leg) is rotated with same speed, we achieve front-back motion.
+Angle of rotation of joint is tracked with help of rotary pot. attached.
+Thus we control the walking of bot by giving angle (as a setpoint) for each half of a leg and correspondingly error can be calculated. 
+Error = Angle_given(Angle to be moved) - Current_Angle(Corresponding pot. reading).
+This error value is fed in PID and output of PID is fed into motor controller input(as a pwm signal) which control direction and rotation speed of motor and thus corresponding joint rotates and reaches the given angle value and then stops.
+This method is employed in all 8 motors to get desired gait.
+
+# Results and Future Scope:
+We are able to achieve different bending of legs autonomously but bot still need development in terms of lifting one leg and further walking. It requires major development in future which includes complete making of upper part of body.
+
+# Team:
+Mr. Manish Goyal(Senior Mentor)
+Mr. Peyush Jain(Mentor)
+Mr. Animesh Mishra(Mentor)
+Mr. Kalp Garg(Member)
+Mr. Rohit Agrawal(Member)
+Mr. Devashish Patil(Member)
+Mr. Sandy Sandeep(Member)
+Mr. Tarun Saxena(Member)
+Mr. Alok Kumar(Member)
+Mr. Ravi Yadav Mry(Member)
+Mr. Anurag Soni(Member)
+Mr. Abhinav Jain(Member)
+Mr. Aayush Singh Chauhan(Member)
